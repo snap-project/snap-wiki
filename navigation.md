@@ -1,5 +1,10 @@
 # SNAP!
 
+[Documentation]()
+
+  * [Architecture](documentation/architecture.md)
+  * [Client](documentation/client/index.md)
+
 [Tutoriels]()
 
   * [Apps](tutoriels/apps/index.md)
