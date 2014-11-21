@@ -55,3 +55,43 @@ En arrivant sur la page d'accueil, vous devriez voir:
 
 Et en cliquant sur le bouton "Mon_application"
 ![Page principale de votre application](images/premiere_app_img_2.png "Page principale de votre application")
+
+Utiliser les services SNAP!
+---------------------------
+
+La force de SNAP! par rapport à la création de simples applications HTML5 est la mise à disposition de "[services](../../documentation/client/services.md)" apportant des fonctionnalités supplémentaires à l'API Javascript commune aux navigateurs.
+
+Envoi de messages en temps réel entre vos utilisateurs, accès aux informations de l'utilisateur courant, stockage de données en sont plusieurs exemples.
+
+Afin d'utiliser les différents services proposés par SNAP!, intégrez dans votre page:
+
+```
+<script type="text/javascript" src="snap.js"></script>
+<script type="text/javascript">
+
+Snap.ready(function(err, services) {
+
+  if(err) {
+
+    // Une erreur est survenue pendant le processus d'initialisation des services.
+    // Affichez un message prévenant vos utilisateur qu'un problème empêche la bonne
+    // exécution de votre problème.
+
+    alert(err);
+    return;
+
+  }
+
+  // Commencez à utiliser les services ici:
+  //
+  // Exemple:
+
+  // Récupérer la liste des Apps disponible sur le portail SNAP!
+  services.apps.getAppsList(function(err, appsList) {
+    // ...
+  });
+
+});
+
+</script>
+```
