@@ -20,5 +20,5 @@ Qu'est ce que SNAP! ?
 
     SNAP! est aujourd'hui principalement orienté vers le <strong>monde de l'éducation</strong>. Pour l'accompagner, un projet annexe au nom de code "App Builder" devrait permettre aux non développeurs de créer leurs propres "apps" en mode "glisser/déposer" à partir de composants de type "widget" (médias, texte, quiz, puzzle...).
   </div>
-  <div class="cold-md-6"><div style="text-align:center">![SNAP! - Écran d'accueil](images/snap_capture_accueil.jpg)</div></div>
+  <div class="cold-md-6"><div style="text-align:center">![SNAP! - Écran d'accueil](images/snap_capture_accueil.png)</div></div>
 </div>
