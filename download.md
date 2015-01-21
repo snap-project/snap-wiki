@@ -1,5 +1,4 @@
-Nightly build
--------------
+# Nightly build
 
 Des archives sont créées chaque nuit à partir de la dernière version des fichiers sources sur la branche de développement.
 

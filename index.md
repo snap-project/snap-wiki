@@ -1,5 +1,5 @@
-Qu'est ce que SNAP! ?
-=====================
+# Qu'est ce que SNAP! ?
+
 <div class="row"><div class="col-md-12"><div class="alert alert-warning" role="alert"><strong>Attention</strong> Le projet SNAP! est en cours de développement et l'application ne peut être considérée comme stable à son état d'avancement actuel.</div></div></div>
 <div class="row"><div class="col-md-6">
     SNAP! est un projet libre de <strong>portail applicatif "nomade"</strong>.
@@ -20,5 +20,5 @@ Qu'est ce que SNAP! ?
 
     SNAP! est aujourd'hui principalement orienté vers le <strong>monde de l'éducation</strong>. Pour l'accompagner, un projet annexe au nom de code "App Builder" devrait permettre aux non développeurs de créer leurs propres "apps" en mode "glisser/déposer" à partir de composants de type "widget" (médias, texte, quiz, puzzle...).
   </div>
-  <div class="cold-md-6"><div style="text-align:center">![SNAP! - Écran d'accueil](images/snap_capture_accueil.png)</div></div>
+  <div class="col-md-6"><div style="text-align:center">![SNAP! - Écran d'accueil](images/snap_capture_accueil.png)</div></div>
 </div>

@@ -1,7 +1,7 @@
-Documentation client
-====================
+# Côté client
 
-* Apps
-  * [Le fichier `manifest.json`](app-manifest.md)
+* Les Apps
+  * [Le fichier `manifest.webapp`](app-manifest.md)
   * Services
+    * [apps](services/apps.md)
     * [appStorage](services/app-storage.md)

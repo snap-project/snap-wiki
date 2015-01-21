@@ -2,8 +2,8 @@
 
 [Documentation]()
 
-  * [Architecture](documentation/architecture.md)
-  * [Client](documentation/client/index.md)
+  * [Côté client](documentation/client/index.md)
+  * [Architecture générale](documentation/architecture.md)
 
 [Tutoriels]()
 

@@ -1,6 +1,6 @@
-# Le service appStorage
+# Le service "appStorage"
 
-Le service appStorage met a disposition des Apps une base de données clé/valeur dédiée.
+Le service **appStorage** met a disposition des Apps une base de données clé/valeur dédiée.
 Une App peut utiliser ce service afin de faire persister des informations entre plusieurs sessions de travail d'un utilisateur.
 
 ## Utilisation
@@ -20,7 +20,7 @@ Snap.ready(function(err, services) {
 });
 ```
 
-## Base de données utilisateur / partagée
+## Base de données utilisateur ou partagée ?
 
 Le service appStorage expose deux types de base de données: une base spécifique à l'utilisateur courant et une base partagée entre tous les utilisateurs.
 Toutes les méthodes décrites ci-après ont une méthode 'jumelle' permettant de travailler avec la base de données partagée. Le nommage de ces méthodes suit le modèle `[nom méthode]() -> [nom méthode]Shared()`.
