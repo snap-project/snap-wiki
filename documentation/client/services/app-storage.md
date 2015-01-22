@@ -137,34 +137,32 @@ services.appStorage.batch(batch, function(err) {
 });
 ```
 
-### appStorage.find(filter, options, callback)
+### appStorage.find(filter, callback)
 
 Effectue une recherche sur la base de données
 
 ** Arguments **
 
-  - `filter` __Object__ Filtre au format [sift.js](https://github.com/crcn/sift.js)
-  - `options` __Object__ Options à passer à la méthode [levelup.createReadStream()](https://github.com/rvagg/node-levelup#dbcreatereadstreamoptions)
+  - `filter` __Object__ Filtre au format [MongoDB](http://docs.mongodb.org/manual/reference/operator/query/). Gère l'ensemble des opérateurs de comparaison, logiques et de parcours de tableaux.
   - `callback(err, results)` __Function__ La fonction de rappel qui sera invoquée lors de la réponse du service
       - `err`  __Object__  Si différent de `null`, une erreur s'est produite lors de l'appel au service
-      - `results`  __Array[Object]__  Résultat de la requête, chaque entrée ayant les propriétés `key` et `value`
+      - `results`  __Array[Object]__  Tableau d'objets représentant le résultat de la recherche
 
 ** Exemple **
 ```javascript
+
+// On veut récupérer toutes les entrées de avec la propriété type égale à 'car' comportant une propriété 'price' >= 10000
+// -> Toutes les voitures avec un prix supérieur à 10000
 var filter = {
-  amount: { $gte: 5 } // On veut récupérer toutes les entrées comportant une propriété amount >= 5
+  type: 'car',
+  price: { $gte: 10000 }
 };
 
-var options = {
-  start: 'stock-' // On veut commencer la recherche sur les entrées ayant une clé commençant par 'stock-'
-  end: 'stock.' // On arrête la recherche lorsque la clé ne commence plus par 'stock-' -> charCode('.') = charCode('-') + 1
-};
-
-services.appStorage.find(filter, options, function(err, results) {
+services.appStorage.find(filter, function(err, cars) {
   if(err) {
     throw err; // Une erreur s'est produite
   } else {
-    console.log(results);
+    console.log(cars);
   }
 });
 ```
